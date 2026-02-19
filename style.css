@@ -22,3 +22,6 @@ td,th{
 ol{
   font-size:20px
 }
+body.menu-riche {
+  background:linear-gradient(135deg,#667eea,#764ba2);
+}
