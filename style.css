@@ -10,7 +10,7 @@ j{text-align: left; font-size:25px}
 
 img src="image_menu_riche.png"{width:50px; height:50px}
 
-mk{font-size:20px}}
+p1{font-size:20px}}
 
 table{
   border-collapse: collapse;
@@ -23,7 +23,7 @@ ol{
   font-size:20px
 }
 body.menu-riche {
-  background:linear-gradient(135deg,#667eea,#764ba2);
+  background:rgb(43, 44, 78)
 }
 body.menu-riche {
   color:rgb(254, 213, 4)
