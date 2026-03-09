@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionnaire HTML5</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 15px;
+        }
+        input, select, textarea, button {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color:green;
+            color: white;
+            }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<h2 style="text-align:center;">Service apres lecture du site</h2>
+
+<form action="traitement.php" method="post">
+   
+
+    <label>Quel restaurant avez vous prévu de visiter</label>
+    <input type="radio" id="Griny" name="ville" value="Griny" required>
+    <label for="Griny">Griny</label>
+    <input type="radio" id="femme" name="ville" value="Garges les Gonnesse">
+    <label for="Garges les Gonnesse">Garges les Gonnesse</label>
+    <input type="radio" id="Nanterre" name="ville" value="Nanterre">
+    <label for="Nanterre">Nanterre</label>
+    <input type="radio" id="Villeneuve-Saint-Georges" name="ville" value="Villeneuve-Saint-Georges">
+    <label for="Villeneuve-Saint-Georges">Villeneuve-Saint-Georges</label>
+    <input type="radio" id="Gotham" name="ville" value="Gotham">
+    <label for="Gotham">Gotham</label>
+    <input type="radio" id="Tijuana" name="ville" value="Tijuana">
+    <label for="Tijuana">Tijuana</label>
+
+    <label for="Menu préféré">Menu préféré :</label>
+    <select id="Menu préféré" name="Menu préféré" required>
+        <option value="">-- Sélectionnez --</option>
+        <option value=">Menu VIP">Menu VIP</option>
+        <option value="Menu Pauvre">Menu Pauvre</option>
+            </select>
+
+    <label for="commentaire">Avez vous plus de commentaire ?:</label>
+    <textarea id="commentaire" name="commentaire" rows="4" placeholder="Ex:Ce restaurant est extrodinaire et le site est incroyable"></textarea>
+
+      <button type="submit">Envoyer</button>
+</form>
+
+</body>
